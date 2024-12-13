@@ -1,0 +1,37 @@
+.custom-button {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    color: #000000;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.15rem 0.3rem;
+    gap: 0.2rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: normal;
+}
+
+.custom-button i {
+    font-size: 0.85rem;
+}
+
+.custom-button:hover {
+    background-color: #706e69;
+    color: #f8f9fa;
+}
+.button-gen {
+    background-color: #1a6edb;
+    border: 1px solid #ced4da;
+    color: #f1f1f1;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.15rem 0.3rem;
+    gap: 0.5em;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: normal;
+}
+.button-gen:hover {
+    background-color: #af810d;
+    color: #f8f9fa;
+}
