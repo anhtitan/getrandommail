@@ -6,7 +6,7 @@ function generateEmails() {
     const domain = document.getElementById('domain').value;
 
     if (!username || !domain || startNum > endNum) {
-        showToast('warning', 'Invalid input. Please check your data.');
+        showToast('error', 'Invalid input. Please check your data.');
         return;
     } else {
         showToast('success', 'success!');

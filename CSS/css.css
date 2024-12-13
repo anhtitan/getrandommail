@@ -20,7 +20,7 @@
     color: #f8f9fa;
 }
 .button-gen {
-    background-color: #1a6edb;
+    background-color: #0d6efd;
     border: 1px solid #ced4da;
     color: #f1f1f1;
     display: inline-flex;
@@ -32,6 +32,6 @@
     font-weight: normal;
 }
 .button-gen:hover {
-    background-color: #af810d;
+    background-color: #3498db;
     color: #f8f9fa;
 }

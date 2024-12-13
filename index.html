@@ -11,23 +11,26 @@
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/css.css">
+    <link rel="shortcut icon" href="./CSS/factory.svg">
 
 </head>
 
 <body class="bg-light">
     <div class="container py-5">
-        <h1 class="text-center text-success mb-4">Get Random Email With Number</h1>
+        <h1 class="text-center text-primary mb-4">Get Random Email With Number</h1>
         <div class="card shadow-sm">
             <div class="card-body">
                 <form onsubmit="event.preventDefault(); generateEmails();">
                     <div class="row">
                         <div class="mb-3 col-6">
                             <label for="username" class="form-label">User Name:</label>
-                            <input type="text" id="username" name="username" class="form-control" required>
+                            <input type="text" id="username" name="username" class="form-control"
+                                placeholder="Ex: anhtitan" required>
                         </div>
                         <div class="mb-3 col-6">
                             <label for="domain" class="form-label">Domain:</label>
-                            <input type="text" id="domain" name="domain" class="form-control" required>
+                            <input type="text" id="domain" name="domain" class="form-control"
+                                placeholder="Ex: gmail.com" required>
                         </div>
                     </div>
                     <div class="row">
@@ -47,22 +50,34 @@
 
                 </form>
 
-                <div class="container">
+         
+                    <div class="row">
 
-                    <div class="d-flex justify-content-end mb-2">
-                        <button class="custom-button" onclick="copyEmails();">
-                            <i class="bi bi-clipboard"></i> Copy
-                        </button>
-                        <button class="custom-button" onclick="viewInNewTab();">
-                            <i class="bi bi-box-arrow-up-right"></i> View New Tab
-                        </button>
-                        <button class="custom-button" onclick="downloadEmails();">
-                            <i class="bi bi-download"></i> Download
-                        </button>
+                        <div class="col-1">
+                            <div class="form-label">Result:</div>
+                        </div>
+                        <div class="col-11">
+                            <div class="d-flex justify-content-end mb-2 container">
+
+                                <button class="custom-button" onclick="copyEmails();">
+                                    <i class="bi bi-clipboard"></i> Copy
+                                </button>
+                                <button class="custom-button" onclick="viewInNewTab();">
+                                    <i class="bi bi-box-arrow-up-right"></i> View New Tab
+                                </button>
+                                <button class="custom-button" onclick="downloadEmails();">
+                                    <i class="bi bi-download"></i> Download
+                                </button>
+                            </div>
+                        </div>
+
                     </div>
+             
 
-                </div>
-                <textarea id="output" class="form-control" rows="10" readonly></textarea>
+
+
+                <textarea id="output" class="form-control" rows="10" placeholder="Ex: anhtitan@gmail.com"
+                    readonly></textarea>
             </div>
         </div>
     </div>
